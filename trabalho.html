@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Adicione estilos personalizados aqui */
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header text-center">
+    <h1>Minha Página Web</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Item 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Item 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Item 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container section">
+    <div class="row">
+        <div class="col">
+            <h2>Seção 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna sit amet lorem auctor consequat.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container section">
+    <div class="row">
+        <div class="col">
+            <h2>Seção 2</h2>
+            <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container section">
+    <div class="row">
+        <div class="col">
+            <h2>Seção 3</h2>
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer text-center">
+    <p>&copy; <span id="year"></span> Minha Página Web</p>
+</div>
+
+<!-- Script para atualizar o ano no rodapé -->
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</body>
+</html>

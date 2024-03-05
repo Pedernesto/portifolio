@@ -1,0 +1,121 @@
+<section>
+    <h2>Taxas e serviços</h2>
+    <fieldset>
+        <legend>Tabela de serviços</legend>
+    <table border>
+        <caption>Descrição dos serviços e valores</caption>
+        <thead>
+        <tr>
+            <th>
+                serviços
+            </th>
+            <th>
+                valor
+            </th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+        <tr>
+            <td>
+                reserva de hotel
+            </td>
+            <td>
+                R$200
+            </td>
+        </tr>
+        <tr>
+            <td>
+                compra de passagens
+            </td>
+            <td>
+                R$100
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Aluguel de carro
+            </td>
+            <td>
+                R$200
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                serviços
+            </td>
+            <td>
+                valor
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+    </fieldset>
+</section>
+<section>
+    <form method="GET" action="">
+        <fieldset>
+        <legend>Dados da viagem</legend>
+
+        <label>Nome</label><br>
+
+        <input type="text" name="nome"><br><br>
+
+        <label>Email</label><br>
+
+        <input type="email" required name="email"><br><br>
+
+        <label>Data de ida</label><br>
+        <input type="date" name="dataIda"><br><br>
+
+        <label>Data de volta</label><br>
+        <input type="date" name="dataVolta"><br><br>
+
+        <label>Quantidade de pessoas</label><br>
+        <input type="number" name="qtdPessoas"><br><br>
+
+        <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+        <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+        <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+        <br><input type="checkbox" name="aluguel de veículos" value="Veículos">Reserva de veículos<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha a forma de pagamento</legend>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Pix">Pix
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha o prazo para pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista">Á vista</option>
+                <option value="5x">5x sem juros</option>
+                <option value="10x" selected>10x sem juros</option>
+            </select>
+        </fieldset>
+
+        <label>Comentario</label><br>
+
+        <textarea rows="5" name="comentario"></textarea><br><br>
+
+        <button>Salvar</button>
+
+
+    </form>
+</fieldset>
+</section>
+<footer>
+    <p>Desenvolvido por Pedro Ernesto</p>
+</footer>
+</body>
+</html>
